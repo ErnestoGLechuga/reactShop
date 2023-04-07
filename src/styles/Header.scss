@@ -1,4 +1,4 @@
-@use '../styles/vars';
+@use './vars';
 
 nav {
 	display: flex;
@@ -9,8 +9,10 @@ nav {
 .menu {
 	display: none;
 }
-.logo {
+.logoNormal {
+	display: flex;
 	width: 100px;
+	margin-bottom: 0px;
 }
 .navbar-left ul,
 .navbar-right ul {

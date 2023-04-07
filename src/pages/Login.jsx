@@ -9,7 +9,7 @@ const Login = () => {
         <Header/>
         <div className="Login">
         <div className="Login-container">
-            <img src={logoMobile} alt="logo" className="logo"/>
+            <img src={logoMobile} alt="logo" className="logoMobile"/>
 
             <h1 className="title">Create a new password</h1>
             <p className="subtitle">Enter a new password for your account</p>
