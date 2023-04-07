@@ -4,6 +4,7 @@
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
+    "gi": "^1.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",

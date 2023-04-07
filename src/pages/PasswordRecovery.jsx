@@ -3,7 +3,7 @@ import '../styles/PasswordRecovery.scss';
 import logoMobile from '../../maquetacion/logos/logo_yard_sale.svg';
 import iconEmail from '../../maquetacion/icons/email.svg';
 
-const RecoveryPassword = () => {
+const PasswordRecovery = () => {
     return (
         <div className="PasswordRecovery">
             <div className="PasswordRecovery-container">
