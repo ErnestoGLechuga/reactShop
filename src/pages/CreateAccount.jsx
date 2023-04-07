@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/CreateAccount.scss';
+import Header from '../components/Header';
 
 const CreateAccount = () => {
     return (
+        <>
+        <Header />
         <div className="CreateAccount">
         <div className="CreateAccount-container">
             <h1 className="title">My account</h1>
@@ -24,6 +27,7 @@ const CreateAccount = () => {
             </form>
         </div>
         </div>
+        </>
     );
 }
 

@@ -2,9 +2,12 @@ import React from 'react';
 import OrderItem from '../components/OrderItem';
 import Menu from '../components/Menu';
 import '../styles/Checkout.scss';
+import Header from '../components/Header';
 
 const Checkout = () => {
     return (
+        <>
+        <Header />
         <div className="Checkout">
         <div className="Checkout-container">
             <h1 className="title">My oder</h1>
@@ -20,6 +23,7 @@ const Checkout = () => {
             <OrderItem />
         </div>
         </div>
+        </>
     );
 }
 
