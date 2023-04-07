@@ -1,16 +1,17 @@
 import React from 'react';
 import '../styles/Menu.scss';
+import Orders from '../pages/Orders';
 
 const Menu = () => {
     return (
         <div className="Menu">
         <ul>
             <li>
-                <a href="/" className="title">My orders</a>
+                <a href="/orders" className="title">My orders</a>
             </li>
 
             <li>
-                <a href="/" >My account</a>
+                <a href="/account" >My account</a>
             </li>
 
             <li>
