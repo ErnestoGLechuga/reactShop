@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/Login.scss';
 import logoMobile from '../../maquetacion/logos/logo_yard_sale.svg';
+import Header from '../components/Header';
 
 const Login = () => {
     return (
+        <>
+        <Header/>
         <div className="Login">
         <div className="Login-container">
             <img src={logoMobile} alt="logo" className="logo"/>
@@ -19,6 +22,7 @@ const Login = () => {
             </form>
         </div>
     </div>
+    </>
     );
 }
 

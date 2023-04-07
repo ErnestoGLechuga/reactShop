@@ -1,9 +1,12 @@
 import React from 'react';
 import '../styles/NewPassword.scss';
 import LogoYard from '../../maquetacion/logos/logo_yard_sale.svg'
+import Header from '../components/Header';
 
 const NewPassword = () => {
     return (
+    <>
+    <Header/>
     <div className="NewPassword">
         <div className="NewPassword-container">
             <img src={LogoYard} alt="logo" className="logo"/>
@@ -20,6 +23,7 @@ const NewPassword = () => {
             <button className="secondary-button signup-button">Sign Up</button>
         </div>
     </div>
+    </>
     );
 }
 
