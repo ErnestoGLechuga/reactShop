@@ -2,9 +2,12 @@ import React from 'react';
 import OrderItem from '../components/OrderItem';
 import '../styles/MyOrder.scss';
 import flechita from '../../maquetacion/icons/flechita.svg'
+import Header from '../components/Header';
 
 const MyOrder = () => {
 	return (
+		<>
+		<Header />
 		<aside className="MyOrder">
 			<div className="title-container">
 				<img src={flechita} alt="arrow" />
@@ -23,6 +26,7 @@ const MyOrder = () => {
 				</button>
 			</div>
 		</aside>
+		</>
 	);
 }
 

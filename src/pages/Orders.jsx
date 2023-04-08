@@ -1,9 +1,12 @@
 import React from 'react';
 import OrderItem from '../components/OrderItem';
 import '../styles/Orders.scss';
+import Header from '../components/Header';
 
 const Orders = () => {
 	return (
+		<>
+		<Header />
 		<div className="Orders">
 			<div className="Orders-container">
 				<h1 className="title">My orders</h1>
@@ -12,6 +15,7 @@ const Orders = () => {
 				</div>
 			</div>
 		</div>
+		</>
 	);
 }
 
