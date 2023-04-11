@@ -1,29 +1,47 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import '../styles/Login.scss';
-import logoMobile from '../../maquetacion/logos/logo_yard_sale.svg';
+import logo from '../../maquetacion/logos/logo_yard_sale.svg';
 import Header from '../components/Header';
 
 const Login = () => {
+    const form = useRef(null);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const formData = new FormData(form.current);
+        const data = {
+            username: formData.get('email'),
+            password: formData.get('password')
+        }
+        console.log(data);
+    };
+
     return (
         <>
-        <Header/>
-        <div className="Login">
-        <div className="Login-container">
-            <img src={logoMobile} alt="logo" className="logoMobile"/>
-
-            <h1 className="title">Create a new password</h1>
-            <p className="subtitle">Enter a new password for your account</p>
-            <form action="/" className="form">
-                <label htmlFor="password" className="label">Password</label>
-                <input type="password" id="password" placeholder="*********" className="input input-password"/>
-                <label htmlFor="new-password" className="label">Password</label>
-                <input type="password" id="new-password" placeholder="*********" className="input input-password"/>
-                <input type="submit" value="Confirm" className="primary-button login-button"/>
-            </form>
-        </div>
-    </div>
-    </>
-    );
+        <Header />
+		<div className="Login">
+			<div className="Login-container">
+				<img src={logo} alt="logo" className="logo" />
+				<form action="/" className="form" ref={form}>
+					<label htmlFor="email" className="label">Email address</label>
+					<input type="text" name="email" placeholder="platzi@example.com" className="input input-email" />
+					<label htmlFor="password" className="label">Password</label>
+					<input type="password" name="password" placeholder="*********" className="input input-password" />
+					<button
+						onClick={handleSubmit}
+						className="primary-button login-button">
+						Log in
+					</button>
+					<a href="/">Forgot my password</a>
+				</form>
+				<button
+					className="secondary-button signup-button">
+					Sign up
+				</button>
+			</div>
+		</div >
+        </>
+	);
 }
 
 export default Login;
