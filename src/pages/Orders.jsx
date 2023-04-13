@@ -6,7 +6,6 @@ import Header from '../components/Header';
 const Orders = () => {
 	return (
 		<>
-		<Header />
 		<div className="Orders">
 			<div className="Orders-container">
 				<h1 className="title">My orders</h1>
