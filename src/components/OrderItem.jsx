@@ -3,7 +3,7 @@ import '@styles/OrderItem.scss';
 import iconClose from '@icons/icon_close.png';
 import AppContext from '../context/AppContext';
 
-const OrderItem = (product) => {  
+const OrderItem = ({product}) => {  
     return (
             <div className="OrderItem">
                 <figure>
